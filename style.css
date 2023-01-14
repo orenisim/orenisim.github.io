@@ -145,14 +145,24 @@ section {
   padding: 40px 15%;
   margin: 0 auto;
 }
-.contact {
-  height: 100%;
+.success {
+  border: 2px solid limegreen;
+}
+.error {
+  border: 2px solid crimson;
+}
+.contact-form {
+  /* height: 100%;
   width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   align-items: center;
-  grid-gap: 6rem;
+  grid-gap: 6rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact-form h1 {
   font-size: 80px;
@@ -168,19 +178,24 @@ section {
   margin-bottom: 3.8rem;
 }
 .contact-form form {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .contact-form form input,
 form textarea {
   width: 100%;
   padding: 17px;
-  border: none;
   outline: none;
   background: #191919;
   color: white;
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
   border-radius: 10px;
+}
+.form-unvalidated-input {
+  border: none;
 }
 .contact-form form .btn {
   display: inline-block;
@@ -200,6 +215,7 @@ form textarea {
   background: transparent;
   transform: scale(1.1);
 }
+
 /* style for projects,education,hobbies sections */
 .projects {
   width: 100%;

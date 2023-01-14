@@ -73,7 +73,12 @@
               ,Bootstrap, Google Firebase, API.
             </p>
             <p style="text-align: center">
-              <a class="button" href="https://comprabets.web.app/">Check Out</a>
+              <a
+                class="button"
+                href="https://comprabets.web.app/"
+                target="_blank"
+                >Check Out</a
+              >
             </p>
           </div>
         </div>
@@ -87,15 +92,12 @@
               manner. Use AI to learn the viewer's patterns.
             </p>
             <p style="text-align: center">
-              <a
-                class="button"
-                href="https://www.canva.com/design/DAFVrOrhfJ0/Ca4IpIkSA9dd2Z8gqId7OA/view?utm_content=DAFVrOrhfJ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                >Check Out</a
-              >
+              <a class="button" id="the-nerd-btn">Check Out</a>
             </p>
           </div>
         </div>
       </div>
+      <div class="the-nerd-presentation"></div>
     </div>
     <!-- end of my projects section -->
     <!-- Education section -->
@@ -225,18 +227,32 @@
           fell free to write me a message and i will return to you
         </p>
         <form action="">
-          <input type="text" placeholder="Your Name" required />
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="form-unvalidated-input"
+            required
+          />
           <input
             type="email"
             name="email"
             placeholder="E-mail"
             id="email"
+            class="form-unvalidated-input"
             required
+          />
+          <input
+            type="text"
+            name="phone_num"
+            placeholder="Israeli Phone Number"
+            class="form-unvalidated-input"
+            id="phone_num"
           />
           <input
             type="text"
             placeholder="Write a Subject"
             id="subject"
+            class="form-unvalidated-input"
             required
           />
           <textarea
@@ -245,6 +261,7 @@
             cols="30"
             rows="10"
             placeholder="Your Message"
+            class="form-unvalidated-input"
             required
           ></textarea>
           <input type="submit" value="Submit" class="btn" />
@@ -256,15 +273,19 @@
     <footer>
       <p>Oren Nisim</p>
       <div class="social">
-        <a href="https://www.linkedin.com/in/oren-nisim-a39b301b6/"
+        <a
+          href="https://www.linkedin.com/in/oren-nisim-a39b301b6/"
+          target="_blank"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
-        <a href="https://github.com/orenisim"
+        <a href="https://github.com/orenisim" target="_blank"
           ><i class="fa-brands fa-github"></i
         ></a>
       </div>
     </footer>
     <!-- end of footer -->
     <!-- send emails from my sites using smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
